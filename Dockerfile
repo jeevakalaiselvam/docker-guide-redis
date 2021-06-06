@@ -1,4 +1,8 @@
-#Use and existing base apline linux image
+#Get the base from a Alpine iamge
 FROM alpine
 
-#Download and install dependencies
+#Install some dependencies
+RUN npm install
+
+#Default command to run at start
+CMD ["npm","start"]
