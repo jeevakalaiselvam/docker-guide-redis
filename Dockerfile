@@ -17,6 +17,6 @@ COPY ./ ./
 CMD ["npm","start"]
 
 #Build example
-#docker build -t jeevakalaiselvam:nodestarter
-#docker run -p 8080:8080 jeevakalaiselvam:nodestarter //To run in current process
-#docker run -d -p 8080:8080 jeevakalaiselvam:nodestarter //To run in background process
+#docker build -t jeevakalaiselvam/nodestarter:latest
+#docker run -p 8080:8080 jeevakalaiselvam/nodestarter:latest //To run in current process
+#docker run -d -p 8080:8080 jeevakalaiselvam/nodestarter:latest //To run in background process
