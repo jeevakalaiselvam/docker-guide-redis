@@ -4,11 +4,14 @@ FROM node:alpine
 # Add the path of the working directory
 WORKDIR /usr/app
 
+# Copy package JSON file to container target
+COPY ./package.json ./
+
+# Install some dependencies, Running this before next step will prevent unnecessary rebuilds
+RUN npm install
+
 # Copy data from outside directory to current working directory in container
 COPY ./ ./
-
-# Install some dependencies
-RUN npm install
 
 # Default command to run at start
 CMD ["npm","start"]
