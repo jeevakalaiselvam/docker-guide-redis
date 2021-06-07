@@ -1,3 +1,3 @@
-# Docker Node Starter Image
+# Docker Node Express Starter Image
 
-A Simple Docker image setting up Nodejs for experimentation
+A Simple Docker image setting up Node Express server
